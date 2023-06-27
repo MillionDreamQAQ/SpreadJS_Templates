@@ -1,6 +1,6 @@
 {
-  "name": "vue2-Designer",
-  "version": "1.0.1",
+  "name": "vue2-designer",
+  "version": "1.0.2",
   "scripts": {
     "start": "vite",
     "build": "vite build",
