@@ -15,12 +15,6 @@ import "./custom.css";
 import * as ExcelIO from "@grapecity/spread-excelio";
 
 import json from "./designer";
-//Apply License
-var sjsLicense = "sjs-distribution-key";
-// GC.Spread.Sheets.LicenseKey = sjsLicense;
-// ExcelIO.LicenseKey = sjsLicense;
-
-// GC.Spread.Sheets.Designer.LicenseKey = "designer-component-distribution-key";
 
 GC.Spread.Common.CultureManager.culture("zh-cn");
 
