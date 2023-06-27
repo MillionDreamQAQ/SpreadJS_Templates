@@ -1,99 +1,29 @@
-# GC.Spread.Sheets.Designer Wrapper for VUE
+# vue2-Spread
 
-### `npm install`
-The dependencies required to install
+This template should help get you started developing with Vue 3 in Vite.
 
-### `npm run start`
-The dependencies required to start sample
+## Recommended IDE Setup
 
-### SpreadJS Designer Vue Wrapper Component Markup
-```js
-<gc-spread-sheets-designer>
-</gc-spread-sheets-designer>
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+
+## Customize configuration
+
+See [Vite Configuration Reference](https://vitejs.dev/config/).
+
+## Project Setup
+
+```sh
+npm install
 ```
 
-**styleInfo prop** Pass styleInfo to the component props to customize the designer's style.
-```js
-<gc-spread-sheets-designer :styleInfo='styleInfo'>
-</gc-spread-sheets-designer>
-  export default {
-    data: function () {
-      return {
-        styleInfo: { height: '800px', width: '1200px', border: 'solid red 1px' }
-      };
-    }
-  }
+### Compile and Hot-Reload for Development
+
+```sh
+npm run dev
 ```
 
-**config prop** Pass in the custom **config** to customize the Designer.
-```js
-<gc-spread-sheets-designer :config='customConfig'>
-</gc-spread-sheets-designer>
-  export default {
-    data: function () {
-      return {
-        config: config //default config json import from local
-      };
-    },
-    computed: {
-        customConfig: function () {
-            this.config.ribbon[0].buttonGroups.unshift(
-                {
-                    "label":"NewDesigner",
-                    "thumbnailClass":"welcome",
-                    "commandGroup":{
-                        "children":[
-                            {
-                                "direction":"vertical",
-                                "commands":[
-                                    "Welcome"
-                                ]
-                            }
-                        ]
-                    }
-                }
-            );
-            let customCommand = {
-                title: "Welcome",
-                text: "Welcome",
-                iconClass: "ribbon-button-welcome",
-                bigButton: "true",
-                commandName: "Welcome",
-                execute: async (context, propertyName) => {
-                    alert('Welcome to new designer.');
-                }
-            }
-            this.config.commandMap = {
-                Welcome: customCommand
-            }
-            return this.config;
-        }
-    }
-  }
-```
-**spreadOptions prop** Pass spreadOptions to the component props to customize the spread's options.
-```js
-<gc-spread-sheets-designer :spreadOptions='spreadOptions'>
-</gc-spread-sheets-designer>
-  export default {
-    data: function () {
-      return {
-        spreadOptions: { sheetCount: 2 }
-      };
-    }
-  }
-```
-**designerInitialized event** Fired after instantiation.
-```js
-<gc-spread-sheets-designer @designerInitialized='designerInitialized'>
-</gc-spread-sheets-designer>
+### Compile and Minify for Production
 
-export default {
-    methods: {
-      designerInitialized(designer) {
-        //this is designer instance
-        console.log(designer);
-      }
-    }
-  }
+```sh
+npm run build
 ```

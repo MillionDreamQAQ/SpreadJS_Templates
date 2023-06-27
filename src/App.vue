@@ -23,10 +23,10 @@ import "@grapecity/spread-sheets-io";
 import "@grapecity/spread-sheets-resources-zh";
 GC.Spread.Common.CultureManager.culture("zh-cn");
 import "@grapecity/spread-sheets-designer-resources-cn";
-import "./custom.css";
 import * as ExcelIO from "@grapecity/spread-excelio";
 
 import json from "./designer.js";
+
 //Apply License
 //GC.Spread.Sheets.LicenseKey = 'sjs-distribution-key';
 //ExcelIO.LicenseKey = 'sjs-distribution-key';
