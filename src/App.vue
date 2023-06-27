@@ -36,15 +36,15 @@ import { Designer } from "@grapecity/spread-sheets-designer-vue";
 
 export default {
   name: "App",
-  data: function() {
+  data: function () {
     let config = GC.Spread.Sheets.Designer.DefaultConfig;
     return {
       styleInfo: { height: "98vh", width: "100%" },
       config: config,
       spreadOptions: {
-        sheetCount: 2
+        sheetCount: 2,
       },
-      designer: null
+      designer: null,
     };
   },
   methods: {
@@ -52,8 +52,7 @@ export default {
       this.designer = value;
       let spread = this.designer.getWorkbook();
       spread.fromJSON(json);
-    }
-  }
+    },
+  },
 };
 </script>
-<style></style>
