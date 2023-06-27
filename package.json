@@ -1,10 +1,8 @@
 {
   "name": "purejs",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cd src && .\\index.html"
   },
     "devDependencies": {
@@ -25,8 +23,5 @@
       "@grapecity/spread-sheets-shapes": "^16.0.7",
       "@grapecity/spread-sheets-slicers": "^16.0.7",
       "@grapecity/spread-sheets-tablesheet": "^16.0.7"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  }
 }
