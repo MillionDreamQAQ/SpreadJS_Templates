@@ -4,8 +4,8 @@ import {
   Worksheet,
   Column,
 } from "@grapecity/spread-sheets-react";
-import "./Style.css";
-import dataService from "../dataService";
+import "../assets/Style.css";
+import dataService from "../assets/dataService";
 
 class OutlineCon extends Component {
   constructor(props) {

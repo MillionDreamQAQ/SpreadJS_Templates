@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import "./Sample.css";
-import NavBar from "./NavBar";
-import QuickStart from "./spreadContainer/QuickStart";
-import DataBingingCon from "./spreadContainer/DataBingingCon";
-import StyleCon from "./spreadContainer/StyleCon";
-import OutlineCon from "./spreadContainer/OutlineCon";
+import "./App.css";
+import NavBar from "./component/NavBar/NavBar";
+import QuickStart from "./component/QuickStart";
+import DataBingingCon from "./component/DataBingingCon";
+import StyleCon from "./component/StyleCon";
+import OutlineCon from "./component/OutlineCon";
 
 class Sample extends Component {
   constructor(props) {

@@ -4,8 +4,8 @@ import {
   Worksheet,
   Column,
 } from "@grapecity/spread-sheets-react";
-import "./Style.css";
-import dataService from "../dataService";
+import "../assets/Style.css";
+import dataService from "../assets/dataService";
 
 class QuickStart extends Component {
   constructor(props) {

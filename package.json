@@ -1,17 +1,21 @@
 {
   "name": "react-spread",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build"
+    "start": "vite",
+    "build": "vite build"
   },
   "dependencies": {
     "@grapecity/spread-sheets": "^16.1.1",
     "@grapecity/spread-sheets-react": "^16.1.1",
     "@grapecity/spread-sheets-resources-zh": "^16.1.1",
-    "react": "^18.0.0",
-    "react-color": "^2.14.0",
-    "react-dom": "^18.0.0",
-    "react-scripts": "1.1.1"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.37",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^4.0.0",
+    "vite": "^4.3.9"
   }
 }
