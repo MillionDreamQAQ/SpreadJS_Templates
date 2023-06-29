@@ -1,8 +1,8 @@
 import { createRouter, createWebHashHistory } from "vue-router";
-import QuickStart from "@/components/QuickStart";
-import DataBinding from "@/components/DataBinding";
-import SpreadStyle from "@/components/SpreadStyle";
-import OutLine from "@/components/OutLine";
+import QuickStart from "@/components/QuickStart.vue";
+import DataBinding from "@/components/DataBinding.vue";
+import SpreadStyle from "@/components/SpreadStyle.vue";
+import OutLine from "@/components/OutLine.vue";
 
 let routes = [
   {
