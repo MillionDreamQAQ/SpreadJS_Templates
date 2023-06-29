@@ -62,35 +62,25 @@ export default {
   border-right: 2px solid #e3e3e3;
 }
 .gc-scrollbar::-webkit-scrollbar-track {
-  /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
   background-color: #efeff0;
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
 .gc-scrollbar::-webkit-scrollbar-button:decrement {
-  /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
   height: 8px;
-  /*background:url("../img/triangle-up.png") no-repeat center;*/
   background-size: 10px 5px;
   background-color: #ffffff;
-  /*background-image: url("data:image/svg+xml;charset=utf-8,<svg viewBox='0 0 10 10' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><defs><line id='l' x1='60' x2='60' y1='7' y2='27' stroke='%236c6c6c' stroke-width='11' stroke-linecap='round'/></defs><g><use xlink:href='%23l' opacity='.27'/><use xlink:href='%23l' opacity='.27' transform='rotate(30 60,60)'/></g></svg>");*/
 }
 .gc-scrollbar::-webkit-scrollbar-button:increment {
-  /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
   height: 8px;
-  /*background:url("../img/triangle-down.png") no-repeat center;*/
   background-size: 10px 5px;
   background-color: #ffffff;
-  /*background-image: url("data:image/svg+xml;charset=utf-8,<svg viewBox='0 0 10 10' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><defs><line id='l' x1='60' x2='60' y1='7' y2='27' stroke='%236c6c6c' stroke-width='11' stroke-linecap='round'/></defs><g><use xlink:href='%23l' opacity='.27'/><use xlink:href='%23l' opacity='.27' transform='rotate(30 60,60)'/></g></svg>");*/
 }
 
-/* Handle */
 .gc-scrollbar::-webkit-scrollbar-thumb {
   -webkit-border-radius: 4px;
   border-radius: 4px;
   background-color: #a7a7a7;
-  /*background:rgba(153,153,153,0.7);*/
-  /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);*/
 }
 .gc-scrollbar::-webkit-scrollbar-thumb:window-inactive {
   background: rgba(153, 153, 153, 0.4);
@@ -102,8 +92,6 @@ export default {
   -webkit-border-radius: 1px;
   border-radius: 1px;
   background-color: #666666;
-  /*background:rgba(153,153,153,0.7);*/
-  /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);*/
 }
 .gc-scrollbar-thin::-webkit-scrollbar-button:decrement,
 .gc-scrollbar-thin::-webkit-scrollbar-button:increment {
