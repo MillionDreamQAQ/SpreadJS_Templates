@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="framework" content="react-designer">
   <script>(function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
@@ -11,8 +12,9 @@
       }); var f = d.getElementsByTagName(s)[0],
         j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
           'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-WFNBSLH');</script>
-  <link rel="icon" href="./logo.png">
+    })(window, document, 'script', 'dataLayer', 'GTM-WFNBSLH');
+  </script>
+  <link rel="icon" href="./public/logo.png">
   <title>SpreadJS</title>
 </head>
 
@@ -23,6 +25,7 @@
     </iframe>
   </noscript>
   <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
 </body>
 
 </html>

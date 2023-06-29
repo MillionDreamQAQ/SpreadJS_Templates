@@ -1,12 +1,11 @@
 {
   "name": "react-designer",
-  "version": "1.0.1",
-  "dependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-scripts": "^3.4.1"
+  "version": "1.0.3",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
   },
-  "devDependencies": {
+  "dependencies": {
     "@grapecity/spread-excelio": "^16.1.1",
     "@grapecity/spread-sheets": "^16.1.1",
     "@grapecity/spread-sheets-barcode": "^16.1.1",
@@ -25,22 +24,14 @@
     "@grapecity/spread-sheets-resources-zh": "^16.1.1",
     "@grapecity/spread-sheets-designer": "^16.1.1",
     "@grapecity/spread-sheets-designer-react": "^16.1.1",
-    "@grapecity/spread-sheets-designer-resources-cn": "^16.1.1"
+    "@grapecity/spread-sheets-designer-resources-cn": "^16.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@types/react": "^18.0.37",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^4.0.0",
+    "vite": "^4.3.9"
   }
 }

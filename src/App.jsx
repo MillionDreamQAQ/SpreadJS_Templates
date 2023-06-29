@@ -11,10 +11,10 @@ import "@grapecity/spread-sheets-designer-resources-cn";
 import { Designer } from "@grapecity/spread-sheets-designer-react";
 import "@grapecity/spread-sheets-designer/styles/gc.spread.sheets.designer.min.css";
 import "@grapecity/spread-sheets/styles/gc.spread.sheets.excel2013white.css";
-import "./custom.css";
+import "./App.css";
 import * as ExcelIO from "@grapecity/spread-excelio";
 
-import json from "./designer";
+import json from "./assets/designer";
 
 GC.Spread.Common.CultureManager.culture("zh-cn");
 
