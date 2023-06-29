@@ -27,11 +27,6 @@ import * as ExcelIO from "@grapecity/spread-excelio";
 
 import json from "./designer.js";
 
-//Apply License
-//GC.Spread.Sheets.LicenseKey = 'sjs-distribution-key';
-//ExcelIO.LicenseKey = 'sjs-distribution-key';
-//GC.Spread.Sheets.Designer.LicenseKey = 'designer-component-distribution-key';
-
 import { Designer } from "@grapecity/spread-sheets-designer-vue";
 
 export default {
