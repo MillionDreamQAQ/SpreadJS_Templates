@@ -1,0 +1,227 @@
+.navigationBar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 20px;
+  padding: 0 10px;
+  width: 200px;
+  border-right: 2px solid #e3e3e3;
+}
+
+.navigationBar li {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.navItem {
+  text-decoration: none;
+  color: #607d8b;
+  cursor: pointer;
+}
+
+.navItem:hover {
+  color: #039be5;
+  background-color: #cfd8dc;
+}
+
+.componentContainer {
+  position: absolute;
+  padding: 10px;
+  left: 242px;
+  top: 0;
+  bottom: 20px;
+  right: 0;
+}
+
+.spreadContainer {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  box-shadow: 0 0 20px grey;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  width: 40px;
+  height: 40px;
+  left: 80px;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+body {
+  font-family: "Gotham SSm A", "Gotham SSm B";
+  font-size: 14px;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 10px 0;
+  font-family: "Forza SSm A", "Forza SSm B";
+  font-weight: bold;
+  line-height: 20px;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
+
+td input[type="checkbox"] {
+  margin: 5px;
+}
+
+td input[type="text"] {
+  margin: 5px;
+  width: 100px;
+}
+
+label {
+  font-weight: normal;
+}
+
+.settingContainer {
+  position: absolute;
+  bottom: 0;
+}
+
+.app-container {
+  margin: 0 10%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 20px #e3e3e3;
+}
+.app-header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 60px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-bottom: 2px solid #982271;
+}
+.items-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-left: 200px;
+}
+.header-item {
+  margin-left: 60px;
+  margin-top: 20px;
+  font-size: medium;
+  cursor: pointer;
+}
+.header-item a:hover {
+  color: #982271;
+  text-decoration: underline;
+}
+.header-item a {
+  color: black;
+  text-decoration: none;
+}
+.logo {
+  position: absolute;
+  top: 40%;
+  margin-top: -14px;
+  width: 240px;
+  left: 25px;
+}
+.body-container {
+  position: absolute;
+  top: 80px;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

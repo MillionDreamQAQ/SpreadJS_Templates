@@ -1,6 +1,6 @@
 {
-  "name": "pure-js-designer",
-  "version": "1.0.3",
+  "name": "JS",
+  "version": "1.0.0",
   "scripts": {
     "start": "vite",
     "dev": "npm run start",
@@ -8,16 +8,7 @@
   },
   "devDependencies": {
     "@grapecity/spread-sheets": "latest",
-    "@grapecity/spread-sheets-barcode": "latest",
-    "@grapecity/spread-sheets-charts": "latest",
-    "@grapecity/spread-sheets-io": "latest",
-    "@grapecity/spread-sheets-languagepackages": "latest",
-    "@grapecity/spread-sheets-pdf": "latest",
-    "@grapecity/spread-sheets-print": "latest",
     "@grapecity/spread-sheets-resources-zh": "latest",
-    "@grapecity/spread-sheets-shapes": "latest",
-    "@grapecity/spread-sheets-slicers": "latest",
-    "@grapecity/spread-sheets-formula-panel": "latest",
     "vite": "^4.3.9"
   }
 }
