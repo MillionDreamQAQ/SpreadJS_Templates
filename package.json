@@ -7,9 +7,22 @@
     "build": "vite build"
   },
   "dependencies": {
+    "@grapecity/spread-excelio": "latest",
     "@grapecity/spread-sheets": "latest",
+    "@grapecity/spread-sheets-barcode": "latest",
+    "@grapecity/spread-sheets-charts": "latest",
+    "@grapecity/spread-sheets-languagepackages": "latest",
+    "@grapecity/spread-sheets-pdf": "latest",
+    "@grapecity/spread-sheets-print": "latest",
+    "@grapecity/spread-sheets-shapes": "latest",
+    "@grapecity/spread-sheets-slicers": "latest",
+    "@grapecity/spread-sheets-formula-panel": "latest",
+    "@grapecity/spread-sheets-io": "latest",
     "@grapecity/spread-sheets-react": "latest",
     "@grapecity/spread-sheets-resources-zh": "latest",
+    "@grapecity/spread-sheets-designer": "latest",
+    "@grapecity/spread-sheets-designer-react": "latest",
+    "@grapecity/spread-sheets-designer-resources-cn": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
