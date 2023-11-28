@@ -1,36 +1,58 @@
 import React, { Component } from "react";
-import {
-  SpreadSheets,
-  Worksheet,
-  Column,
-} from "@grapecity/spread-sheets-react";
+import { SpreadSheets } from "@grapecity/spread-sheets-react";
 import "../assets/Style.css";
 import dataService from "../assets/dataService";
 
 class OutlineCon extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      showRowOutline: true,
-      showColumnOutline: true,
-    };
     this.hostStyle = {
       top: "90px",
       bottom: "35px",
     };
-    this.rowOutlineInfo = [
+  }
+
+  initSpread(spread) {
+    let sheet = spread.getActiveSheet();
+
+    let colInfos = [
+      { name: "order_num", displayName: "订单编号", width: 100 },
+      { name: "order_date", displayName: "订购日期", width: 150 },
+      { name: "type_name", displayName: "类别名称" },
+      { name: "product_name", displayName: "产品名称" },
+      { name: "quantity", displayName: "购买数量" },
+      { name: "unit_price", displayName: "产品单价" },
+      { name: "cost", displayName: "产品成本" },
+      { name: "discount", displayName: "折扣" },
+      { name: "order_amount", displayName: "订单金额" },
+      { name: "order_profit", displayName: "订单利润" },
+      { name: "sales_area", displayName: "销售大区" },
+      { name: "province", displayName: "销售省份" },
+      { name: "city", displayName: "销售城市" },
+      { name: "store", displayName: "销售门店" },
+      { name: "consultant", displayName: "销售顾问" },
+      { name: "pay_method", displayName: "支付方式" },
+      { name: "cus_name", displayName: "顾客姓名" },
+      { name: "cus_phone", displayName: "顾客电话" },
+    ];
+    sheet.suspendPaint();
+    sheet.autoGenerateColumns = false;
+    sheet.setDataSource(dataService.getDataByNumber(100));
+    sheet.bindColumns(colInfos);
+
+    let rowOutlineInfo = [
       { index: 1, count: 4 },
       { index: 6, count: 4 },
     ];
-    this.columnOutlineInfo = [{ index: 0, count: 4 }];
-    this.autoGenerateColumns = false;
-    this.data = dataService.getPersonAddressData();
-  }
+    for (let obj of rowOutlineInfo) {
+      sheet.rowOutlines.group(obj.index, obj.count);
+    }
 
-  changeProps(props, value) {
-    let state = {};
-    state[props] = value;
-    this.setState(state);
+    let columnOutlineInfo = [{ index: 0, count: 4 }];
+    for (let obj of columnOutlineInfo) {
+      sheet.columnOutlines.group(obj.index, obj.count);
+    }
+    sheet.resumePaint();
   }
 
   render() {
@@ -41,54 +63,11 @@ class OutlineCon extends Component {
           <p>以下示例展示如何使用分组。</p>
         </div>
         <div className="spreadContainer" style={this.hostStyle}>
-          <SpreadSheets>
-            <Worksheet
-              showRowOutline={this.state.showRowOutline}
-              showColumnOutline={this.state.showColumnOutline}
-              rowOutlineInfo={this.rowOutlineInfo}
-              columnOutlineInfo={this.columnOutlineInfo}
-              dataSource={this.data}
-              autoGenerateColumns={this.autoGenerateColumns}
-            >
-              <Column width={150} dataField="Name" />
-              <Column width={150} dataField="CountryRegionCode" />
-              <Column width={100} dataField="City" />
-              <Column width={200} dataField="AddressLine" />
-              <Column width={100} dataField="PostalCode" />
-            </Worksheet>
-          </SpreadSheets>
-        </div>
-        <div className="settingContainer">
-          <table>
-            <tbody>
-              <tr>
-                <td>
-                  <label>
-                    <input
-                      type="checkbox"
-                      checked={this.state.showRowOutline}
-                      onChange={(e) => {
-                        this.changeProps("showRowOutline", e.target.checked);
-                      }}
-                    />
-                    显示行分组
-                  </label>
-                </td>
-                <td>
-                  <label>
-                    <input
-                      type="checkbox"
-                      checked={this.state.showColumnOutline}
-                      onChange={(e) => {
-                        this.changeProps("showColumnOutline", e.target.checked);
-                      }}
-                    />
-                    显示列分组
-                  </label>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <SpreadSheets
+            workbookInitialized={(spread) => {
+              this.initSpread(spread);
+            }}
+          ></SpreadSheets>
         </div>
       </div>
     );

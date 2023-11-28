@@ -4,7 +4,7 @@ import "./NavBar.css";
 class NavBar extends Component {
   constructor(props) {
     super(props);
-    this.itemsDesc = ["快速入门指南", "数据绑定", "样式", "分组"];
+    this.itemsDesc = ["创建电子表格实例", "数据绑定", "样式", "分组"];
   }
   render() {
     let items = this.itemsDesc.map((data, index) => {

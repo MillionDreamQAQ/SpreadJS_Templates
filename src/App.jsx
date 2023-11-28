@@ -68,17 +68,12 @@ class Header extends Component {
         <div className="items-container">
           <div className="header-item">
             <a href="https://www.grapecity.com.cn/developer/spreadjs">
-              产品首页
+              产品官网
             </a>
           </div>
           <div className="header-item">
-            <a href="https://demo.grapecity.com.cn/spreadjs/SpreadJSTutorial/">
-              SpreadJS实例
-            </a>
-          </div>
-          <div className="header-item">
-            <a href="https://demo.grapecity.com.cn/SpreadJS/WebDesigner/index.html">
-              在线表格编辑器
+            <a href="https://www.grapecity.com.cn/developer/spreadjs/getstart-zero-based">
+              新手入门路径
             </a>
           </div>
           <div className="header-item">
@@ -87,23 +82,18 @@ class Header extends Component {
             </a>
           </div>
           <div className="header-item">
-            <a href="https://demo.grapecity.com.cn/spreadjs/help/api/modules/GC.Data">
-              API文档
+            <a href="https://www.grapecity.com.cn/developer/spreadjs/applyonline">
+              预约技术顾问
             </a>
           </div>
           <div className="header-item">
-            <a href="https://gcdn.grapecity.com.cn/showforum-230-1.html">
-              产品支持论坛
+            <a href="https://www.grapecity.com.cn/developer/spreadjs/deploy">
+              申请临时部署授权
             </a>
           </div>
           <div className="header-item">
-            <a href="https://www.grapecity.com.cn/developer/spreadjs/help">
-              更多
-            </a>
-          </div>
-          <div className="header-item">
-            <a href="https://www.grapecity.com.cn/developer/spreadjs/download">
-              立即试用
+            <a href="https://www.grapecity.com.cn/developer/spreadjs/demo">
+              更多在线产品 Demo
             </a>
           </div>
         </div>
