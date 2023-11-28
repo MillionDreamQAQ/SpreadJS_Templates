@@ -1,14 +1,15 @@
 {
-  "name": "react-spread",
-  "version": "1.0.2",
+  "name": "react",
+  "version": "1.0.0",
   "scripts": {
     "start": "vite",
+    "dev": "npm run start",
     "build": "vite build"
   },
   "dependencies": {
-    "@grapecity/spread-sheets": "^16.1.1",
-    "@grapecity/spread-sheets-react": "^16.1.1",
-    "@grapecity/spread-sheets-resources-zh": "^16.1.1",
+    "@grapecity/spread-sheets": "latest",
+    "@grapecity/spread-sheets-react": "latest",
+    "@grapecity/spread-sheets-resources-zh": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
