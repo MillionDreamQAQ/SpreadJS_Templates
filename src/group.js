@@ -1,6 +1,8 @@
 window.onload = function () {
-  let spread = new GC.Spread.Sheets.Workbook(document.getElementById("ss"));
+  let designer = new GC.Spread.Sheets.Designer.Designer(document.getElementById("ss"));
 
+  let spread = designer.getWorkbook();
+  
   let sheet = spread.getActiveSheet();
 
   let colInfos = [

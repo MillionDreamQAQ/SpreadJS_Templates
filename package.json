@@ -1,5 +1,5 @@
 {
-  "name": "JS",
+  "name": "JS_Designer",
   "version": "1.0.0",
   "scripts": {
     "start": "vite",
@@ -8,7 +8,18 @@
   },
   "devDependencies": {
     "@grapecity/spread-sheets": "latest",
+    "@grapecity/spread-sheets-barcode": "latest",
+    "@grapecity/spread-sheets-charts": "latest",
+    "@grapecity/spread-sheets-languagepackages": "latest",
+    "@grapecity/spread-sheets-pdf": "latest",
+    "@grapecity/spread-sheets-print": "latest",
+    "@grapecity/spread-sheets-shapes": "latest",
+    "@grapecity/spread-sheets-slicers": "latest",
+    "@grapecity/spread-sheets-formula-panel": "latest",
+    "@grapecity/spread-sheets-io": "latest",
     "@grapecity/spread-sheets-resources-zh": "latest",
+    "@grapecity/spread-sheets-designer": "latest",
+    "@grapecity/spread-sheets-designer-resources-cn": "latest",
     "vite": "^4.3.9"
   }
 }
