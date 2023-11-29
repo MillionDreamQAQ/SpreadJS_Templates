@@ -1,5 +1,5 @@
 {
-  "name": "JS",
+  "name": "JS-Pivot",
   "version": "1.0.0",
   "scripts": {
     "start": "vite",
@@ -8,6 +8,8 @@
   },
   "devDependencies": {
     "@grapecity/spread-sheets": "latest",
+    "@grapecity/spread-sheets-shapes": "latest",
+    "@grapecity/spread-sheets-pivot-addon": "latest",
     "@grapecity/spread-sheets-resources-zh": "latest",
     "vite": "^4.3.9"
   }
