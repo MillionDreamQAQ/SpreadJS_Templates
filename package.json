@@ -1,5 +1,5 @@
 {
-  "name": "JS",
+  "name": "JS-Gantt",
   "version": "1.0.0",
   "scripts": {
     "start": "vite",
@@ -8,6 +8,8 @@
   },
   "devDependencies": {
     "@grapecity/spread-sheets": "latest",
+    "@grapecity/spread-sheets-tablesheet": "latest",
+    "@grapecity/spread-sheets-ganttsheet": "latest",
     "@grapecity/spread-sheets-resources-zh": "latest",
     "vite": "^4.3.9"
   }
