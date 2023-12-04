@@ -1,5 +1,5 @@
 {
-  "name": "react",
+  "name": "React-Gantt",
   "version": "1.0.0",
   "scripts": {
     "start": "vite",
@@ -9,6 +9,8 @@
   "dependencies": {
     "@grapecity/spread-sheets": "latest",
     "@grapecity/spread-sheets-react": "latest",
+    "@grapecity/spread-sheets-tablesheet": "latest",
+    "@grapecity/spread-sheets-ganttsheet": "latest",
     "@grapecity/spread-sheets-resources-zh": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
