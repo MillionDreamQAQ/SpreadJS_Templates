@@ -23,15 +23,6 @@ class Sample extends Component {
       case 0:
         spreadCom = <PivotTable />;
         break;
-      case 1:
-        spreadCom = <DataBingingCon />;
-        break;
-      case 2:
-        spreadCom = <StyleCon />;
-        break;
-      case 3:
-        spreadCom = <OutlineCon />;
-        break;
       default:
         spreadCom = "";
         break;
