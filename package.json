@@ -9,6 +9,8 @@
   "dependencies": {
     "@grapecity/spread-sheets": "latest",
     "@grapecity/spread-sheets-react": "latest",
+    "@grapecity/spread-sheets-shapes": "latest",
+    "@grapecity/spread-sheets-pivot-addon": "latest",
     "@grapecity/spread-sheets-resources-zh": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

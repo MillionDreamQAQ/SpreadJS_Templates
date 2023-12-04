@@ -4,7 +4,7 @@ import "./NavBar.css";
 class NavBar extends Component {
   constructor(props) {
     super(props);
-    this.itemsDesc = ["创建电子表格实例", "数据绑定", "样式", "分组"];
+    this.itemsDesc = ["创建透视表实例"];
   }
   render() {
     let items = this.itemsDesc.map((data, index) => {
@@ -26,7 +26,7 @@ class NavBar extends Component {
     });
     return (
       <div className="navigationBar">
-        <h2>SpreadJS</h2>
+        <h2>快速功能</h2>
         <nav>
           <ul>{items}</ul>
         </nav>

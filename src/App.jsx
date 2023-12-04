@@ -1,10 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import NavBar from "./component/NavBar/NavBar";
-import QuickStart from "./component/QuickStart";
-import DataBingingCon from "./component/DataBingingCon";
-import StyleCon from "./component/StyleCon";
-import OutlineCon from "./component/OutlineCon";
+import PivotTable from "./component/PivotTable";
 
 class Sample extends Component {
   constructor(props) {
@@ -24,7 +21,7 @@ class Sample extends Component {
     let spreadCom;
     switch (this.state.activeIndex) {
       case 0:
-        spreadCom = <QuickStart />;
+        spreadCom = <PivotTable />;
         break;
       case 1:
         spreadCom = <DataBingingCon />;
