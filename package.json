@@ -1,14 +1,15 @@
 {
-  "name": "vue3-spread",
-  "version": "1.0.2",
+  "name": "Vue",
+  "version": "1.0.0",
   "scripts": {
     "start": "vite",
+    "dev": "npm run start",
     "build": "vite build"
   },
   "dependencies": {
-    "@grapecity/spread-sheets": "^16.1.1",
-    "@grapecity/spread-sheets-resources-zh": "^16.1.1",
-    "@grapecity/spread-sheets-vue": "^16.1.1",
+    "@grapecity/spread-sheets": "latest",
+    "@grapecity/spread-sheets-resources-zh": "latest",
+    "@grapecity/spread-sheets-vue": "latest",
     "vue": "^3.3.4",
     "vue-router": "^4.2.2"
   },

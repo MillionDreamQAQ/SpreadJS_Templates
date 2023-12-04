@@ -4,67 +4,61 @@
     <p>以下示例展示如何使用分组。</p>
 
     <div class="spreadContainer">
-      <gc-spread-sheets :hostClass="'spread-host'">
-        <gc-worksheet
-          :dataSource="dataSource"
-          :name="'Outline'"
-          :showColumnOutline="showColumnOutline"
-          :showRowOutline="showRowOutline"
-          :autoGenerateColumns="autoGenerateColumns"
-          :rowOutlineInfo="rowOutlineInfo"
-          :columnOutlineInfo="columnOutlineInfo"
-        >
-          <gc-column :width="'120'" :dataField="'Name'"></gc-column>
-          <gc-column
-            :width="'120'"
-            :dataField="'CountryRegionCode'"
-          ></gc-column>
-          <gc-column :width="'120'" :dataField="'City'"></gc-column>
-          <gc-column :width="'120'" :dataField="'AddressLine'"></gc-column>
-          <gc-column :width="'120'" :dataField="'PostalCode'"></gc-column>
-        </gc-worksheet>
+      <gc-spread-sheets
+        :hostClass="'spread-host'"
+        @workbookInitialized="initSpread"
+      >
       </gc-spread-sheets>
-    </div>
-    <div class="test-btn-list">
-      <label>
-        <input
-          type="checkbox"
-          :checked="showRowOutline"
-          @click="showRowOutline = !showRowOutline"
-        />显示行分组
-      </label>
-      <label>
-        <input
-          type="checkbox"
-          :checked="showColumnOutline"
-          @click="showColumnOutline = !showColumnOutline"
-        />显示列分组
-      </label>
     </div>
   </div>
 </template>
 <script>
 import "@grapecity/spread-sheets-vue";
-import DataService from "../static/dataService";
+import dataService from "../static/dataService";
 
 export default {
-  data() {
-    return {
-      dataSource: DataService.getPersonAddressData(),
-      showRowOutline: true,
-      showColumnOutline: true,
-      autoGenerateColumns: false,
-    };
-  },
-  computed: {
-    rowOutlineInfo() {
-      return [
+  methods: {
+    initSpread(value) {
+      let sheet = value.getActiveSheet();
+
+      let colInfos = [
+        { name: "order_num", displayName: "订单编号", width: 100 },
+        { name: "order_date", displayName: "订购日期", width: 150 },
+        { name: "type_name", displayName: "类别名称" },
+        { name: "product_name", displayName: "产品名称" },
+        { name: "quantity", displayName: "购买数量" },
+        { name: "unit_price", displayName: "产品单价" },
+        { name: "cost", displayName: "产品成本" },
+        { name: "discount", displayName: "折扣" },
+        { name: "order_amount", displayName: "订单金额" },
+        { name: "order_profit", displayName: "订单利润" },
+        { name: "sales_area", displayName: "销售大区" },
+        { name: "province", displayName: "销售省份" },
+        { name: "city", displayName: "销售城市" },
+        { name: "store", displayName: "销售门店" },
+        { name: "consultant", displayName: "销售顾问" },
+        { name: "pay_method", displayName: "支付方式" },
+        { name: "cus_name", displayName: "顾客姓名" },
+        { name: "cus_phone", displayName: "顾客电话" },
+      ];
+      sheet.suspendPaint();
+      sheet.autoGenerateColumns = false;
+      sheet.setDataSource(dataService.getDataByNumber(100));
+      sheet.bindColumns(colInfos);
+
+      let rowOutlineInfo = [
         { index: 1, count: 4 },
         { index: 6, count: 4 },
       ];
-    },
-    columnOutlineInfo() {
-      return [{ index: 0, count: 4 }];
+      for (let obj of rowOutlineInfo) {
+        sheet.rowOutlines.group(obj.index, obj.count);
+      }
+
+      let columnOutlineInfo = [{ index: 0, count: 4 }];
+      for (let obj of columnOutlineInfo) {
+        sheet.columnOutlines.group(obj.index, obj.count);
+      }
+      sheet.resumePaint();
     },
   },
 };
@@ -88,7 +82,7 @@ export default {
   /*height: 240px;*/
   left: 10px;
   right: 10px;
-  bottom: 150px;
+  bottom: 10px;
   box-shadow: 0 0 20px grey;
 }
 .test-btn-list {
