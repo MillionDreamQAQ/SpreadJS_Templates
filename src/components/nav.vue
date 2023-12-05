@@ -3,10 +3,7 @@
     <h2>快速功能</h2>
     <nav>
       <ul>
-        <li><router-link exact to="/QuickStart">创建电子表格实例</router-link></li>
-        <li><router-link exact to="/DataBinding">数据绑定</router-link></li>
-        <li><router-link exact to="/SpreadStyle">样式</router-link></li>
-        <li><router-link exact to="/OutLine">分组</router-link></li>
+        <li><router-link exact to="/GanttSheet">创建甘特表实例</router-link></li>
       </ul>
     </nav>
   </div>

@@ -1,5 +1,5 @@
 {
-  "name": "Vue",
+  "name": "Vue_Gantt",
   "version": "1.0.0",
   "scripts": {
     "start": "vite",
@@ -8,6 +8,8 @@
   },
   "dependencies": {
     "@grapecity/spread-sheets": "latest",
+    "@grapecity/spread-sheets-tablesheet": "latest",
+    "@grapecity/spread-sheets-ganttsheet": "latest",
     "@grapecity/spread-sheets-resources-zh": "latest",
     "@grapecity/spread-sheets-vue": "latest",
     "vue": "^3.3.4",
