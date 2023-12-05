@@ -8,7 +8,7 @@ class OutlineCon extends Component {
     super(props);
     this.hostStyle = {
       top: "90px",
-      bottom: "35px",
+      bottom: "0px",
     };
   }
 
