@@ -26,7 +26,7 @@ class NavBar extends Component {
     });
     return (
       <div className="navigationBar">
-        <h2>SpreadJS</h2>
+        <h2>快速功能</h2>
         <nav>
           <ul>{items}</ul>
         </nav>
