@@ -4,22 +4,41 @@
     <p>以下示例展示如何使用分组。</p>
 
     <div class="spreadContainer">
-      <gc-spread-sheets
-        :hostClass="'spread-host'"
-        @workbookInitialized="initSpread"
-      >
-      </gc-spread-sheets>
+      <gc-spread-sheets-designer
+        :styleInfo="{ height: '100%', width: '100%' }"
+        :config="null"
+        @designerInitialized="initSpread"
+      />
     </div>
   </div>
 </template>
 <script>
-import "@grapecity/spread-sheets-vue";
+import "@grapecity/spread-sheets-designer/styles/gc.spread.sheets.designer.min.css";
+import "@grapecity/spread-sheets/styles/gc.spread.sheets.excel2013white.css";
+
 import dataService from "../static/dataService";
+import "@grapecity/spread-sheets-vue";
+import * as GC from "@grapecity/spread-sheets";
+import "@grapecity/spread-sheets-charts";
+import "@grapecity/spread-sheets-shapes";
+import "@grapecity/spread-sheets-slicers";
+import "@grapecity/spread-sheets-print";
+import "@grapecity/spread-sheets-barcode";
+import "@grapecity/spread-sheets-pdf";
+import "@grapecity/spread-sheets-formula-panel";
+import "@grapecity/spread-sheets-io";
+import "@grapecity/spread-sheets-resources-zh";
+import "@grapecity/spread-sheets-designer-resources-cn";
+import "@grapecity/spread-sheets-designer";
+
+GC.Spread.Common.CultureManager.culture("zh-cn");
 
 export default {
   methods: {
     initSpread(value) {
-      let sheet = value.getActiveSheet();
+      let spread = value.getWorkbook();
+
+      let sheet = spread.getActiveSheet();
 
       let colInfos = [
         { name: "order_num", displayName: "订单编号", width: 100 },

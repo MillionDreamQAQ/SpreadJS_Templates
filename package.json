@@ -1,5 +1,5 @@
 {
-  "name": "Vue",
+  "name": "Vue_Designer",
   "version": "1.0.0",
   "scripts": {
     "start": "vite",
@@ -7,9 +7,22 @@
     "build": "vite build"
   },
   "dependencies": {
+    "@grapecity/spread-excelio": "latest",
     "@grapecity/spread-sheets": "latest",
-    "@grapecity/spread-sheets-resources-zh": "latest",
+    "@grapecity/spread-sheets-barcode": "latest",
+    "@grapecity/spread-sheets-charts": "latest",
+    "@grapecity/spread-sheets-languagepackages": "latest",
+    "@grapecity/spread-sheets-pdf": "latest",
+    "@grapecity/spread-sheets-print": "latest",
+    "@grapecity/spread-sheets-shapes": "latest",
+    "@grapecity/spread-sheets-slicers": "latest",
+    "@grapecity/spread-sheets-formula-panel": "latest",
+    "@grapecity/spread-sheets-io": "latest",
     "@grapecity/spread-sheets-vue": "latest",
+    "@grapecity/spread-sheets-resources-zh": "latest",
+    "@grapecity/spread-sheets-designer": "latest",
+    "@grapecity/spread-sheets-designer-vue": "latest",
+    "@grapecity/spread-sheets-designer-resources-cn": "latest",
     "vue": "^3.3.4",
     "vue-router": "^4.2.2"
   },
