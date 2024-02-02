@@ -7,9 +7,9 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@grapecity/spread-sheets": "latest",
-    "@grapecity/spread-sheets-react": "latest",
-    "@grapecity/spread-sheets-resources-zh": "latest",
+    "@grapecity-software/spread-sheets": "latest",
+    "@grapecity-software/spread-sheets-react": "latest",
+    "@grapecity-software/spread-sheets-resources-zh": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
