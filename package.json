@@ -7,11 +7,11 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@grapecity/spread-sheets": "latest",
-    "@grapecity/spread-sheets-tablesheet": "latest",
-    "@grapecity/spread-sheets-ganttsheet": "latest",
-    "@grapecity/spread-sheets-resources-zh": "latest",
-    "@grapecity/spread-sheets-vue": "latest",
+    "@grapecity-software/spread-sheets": "latest",
+    "@grapecity-software/spread-sheets-tablesheet": "latest",
+    "@grapecity-software/spread-sheets-ganttsheet": "latest",
+    "@grapecity-software/spread-sheets-resources-zh": "latest",
+    "@grapecity-software/spread-sheets-vue": "latest",
     "vue": "^3.3.4",
     "vue-router": "^4.2.2"
   },
