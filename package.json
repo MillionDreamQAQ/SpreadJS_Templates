@@ -7,10 +7,10 @@
     "build": "vite build"
   },
   "devDependencies": {
-    "@grapecity/spread-sheets": "latest",
-    "@grapecity/spread-sheets-tablesheet": "latest",
-    "@grapecity/spread-sheets-ganttsheet": "latest",
-    "@grapecity/spread-sheets-resources-zh": "latest",
+    "@grapecity-software/spread-sheets": "latest",
+    "@grapecity-software/spread-sheets-tablesheet": "latest",
+    "@grapecity-software/spread-sheets-ganttsheet": "latest",
+    "@grapecity-software/spread-sheets-resources-zh": "latest",
     "vite": "^4.3.9"
   }
 }
