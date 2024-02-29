@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import { SpreadSheets } from "@grapecity/spread-sheets-react";
+import { SpreadSheets } from "@grapecity-software/spread-sheets-react";
 import "../assets/Style.css";
 import dataService from "../assets/dataService";
-import "@grapecity/spread-sheets/styles/gc.spread.sheets.excel2013white.css";
-import GC from "@grapecity/spread-sheets";
-import "@grapecity/spread-sheets-tablesheet";
-import "@grapecity/spread-sheets-ganttsheet";
-import "@grapecity/spread-sheets-resources-zh";
+import "@grapecity-software/spread-sheets/styles/gc.spread.sheets.excel2013white.css";
+import GC from "@grapecity-software/spread-sheets";
+import "@grapecity-software/spread-sheets-tablesheet";
+import "@grapecity-software/spread-sheets-ganttsheet";
+import "@grapecity-software/spread-sheets-resources-zh";
 
 GC.Spread.Common.CultureManager.culture("zh-cn");
 
