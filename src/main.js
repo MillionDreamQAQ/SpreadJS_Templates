@@ -5,8 +5,8 @@ import {
   GcSpreadSheets,
   GcWorksheet,
   GcColumn,
-} from "@grapecity/spread-sheets-vue";
-import Designer from "@grapecity/spread-sheets-designer-vue"
+} from "@grapecity-software/spread-sheets-vue";
+import Designer from "@grapecity-software/spread-sheets-designer-vue"
 
 const app = createApp(App)
 
