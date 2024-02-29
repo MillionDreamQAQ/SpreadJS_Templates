@@ -20,7 +20,7 @@
   </div>
 </template>
 <script>
-import "@grapecity/spread-sheets-vue";
+import "@grapecity-software/spread-sheets-vue";
 import dataService from "../static/dataService";
 export default {
   methods: {

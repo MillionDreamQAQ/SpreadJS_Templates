@@ -15,9 +15,9 @@
 <script>
 import Header from "./components/header.vue";
 import Nav from "./components/nav.vue";
-import "@grapecity/spread-sheets/styles/gc.spread.sheets.excel2016colorful.css";
-import GC from "@grapecity/spread-sheets";
-import "@grapecity/spread-sheets-resources-zh";
+import "@grapecity-software/spread-sheets/styles/gc.spread.sheets.excel2016colorful.css";
+import GC from "@grapecity-software/spread-sheets";
+import "@grapecity-software/spread-sheets-resources-zh";
 GC.Spread.Common.CultureManager.culture("zh-cn");
 export default {
   name: "app",

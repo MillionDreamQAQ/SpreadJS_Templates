@@ -9,8 +9,8 @@
   </div>
 </template>
 <script>
-import "@grapecity/spread-sheets-vue";
-import GC from "@grapecity/spread-sheets";
+import "@grapecity-software/spread-sheets-vue";
+import GC from "@grapecity-software/spread-sheets";
 import dataService from "../static/dataService";
 
 export default {
