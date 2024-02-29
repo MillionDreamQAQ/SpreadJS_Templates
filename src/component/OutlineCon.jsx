@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { SpreadSheets } from "@grapecity/spread-sheets-react";
+import { SpreadSheets } from "@grapecity-software/spread-sheets-react";
 import "../assets/Style.css";
 import dataService from "../assets/dataService";
 
