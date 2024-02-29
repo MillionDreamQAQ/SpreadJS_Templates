@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import "../assets/Style.css";
 import dataService from "../assets/dataService";
-import { SpreadSheets } from "@grapecity/spread-sheets-react";
-import "@grapecity/spread-sheets/styles/gc.spread.sheets.excel2013white.css";
-import GC from "@grapecity/spread-sheets";
-import "@grapecity/spread-sheets-shapes";
-import "@grapecity/spread-sheets-pivot-addon";
-import "@grapecity/spread-sheets-resources-zh";
+import { SpreadSheets } from "@grapecity-software/spread-sheets-react";
+import "@grapecity-software/spread-sheets/styles/gc.spread.sheets.excel2013white.css";
+import GC from "@grapecity-software/spread-sheets";
+import "@grapecity-software/spread-sheets-shapes";
+import "@grapecity-software/spread-sheets-pivot-addon";
+import "@grapecity-software/spread-sheets-resources-zh";
 GC.Spread.Common.CultureManager.culture("zh-cn");
 
 class PivotTable extends Component {
