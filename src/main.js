@@ -5,7 +5,7 @@ import {
   GcSpreadSheets,
   GcWorksheet,
   GcColumn,
-} from "@grapecity/spread-sheets-vue";
+} from "@grapecity-software/spread-sheets-vue";
 
 const app = createApp(App)
 

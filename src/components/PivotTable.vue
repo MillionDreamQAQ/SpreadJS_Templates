@@ -15,12 +15,12 @@
   </div>
 </template>
 <script>
-import "@grapecity/spread-sheets/styles/gc.spread.sheets.excel2013white.css";
-import "@grapecity/spread-sheets-vue";
-import GC from "@grapecity/spread-sheets";
-import "@grapecity/spread-sheets-shapes";
-import "@grapecity/spread-sheets-pivot-addon";
-import "@grapecity/spread-sheets-resources-zh";
+import "@grapecity-software/spread-sheets/styles/gc.spread.sheets.excel2013white.css";
+import "@grapecity-software/spread-sheets-vue";
+import GC from "@grapecity-software/spread-sheets";
+import "@grapecity-software/spread-sheets-shapes";
+import "@grapecity-software/spread-sheets-pivot-addon";
+import "@grapecity-software/spread-sheets-resources-zh";
 GC.Spread.Common.CultureManager.culture("zh-cn");
 import dataService from "../static/dataService";
 export default {
