@@ -14,12 +14,12 @@
 <script>
 import dataService from "../static/dataService";
 
-import "@grapecity/spread-sheets/styles/gc.spread.sheets.excel2013white.css";
-import "@grapecity/spread-sheets-vue";
-import GC from "@grapecity/spread-sheets";
-import "@grapecity/spread-sheets-tablesheet";
-import "@grapecity/spread-sheets-ganttsheet";
-import "@grapecity/spread-sheets-resources-zh";
+import "@grapecity-software/spread-sheets/styles/gc.spread.sheets.excel2013white.css";
+import "@grapecity-software/spread-sheets-vue";
+import GC from "@grapecity-software/spread-sheets";
+import "@grapecity-software/spread-sheets-tablesheet";
+import "@grapecity-software/spread-sheets-ganttsheet";
+import "@grapecity-software/spread-sheets-resources-zh";
 
 GC.Spread.Common.CultureManager.culture("zh-cn");
 export default {
